@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "838592e712baaec8",
+        "id": "18a8d730c93bbbe2",
         "type": "tabs",
         "children": [
           {
-            "id": "0a4188409a3083ec",
+            "id": "dc62a2f44bcdcbc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/README.md",
+                "file": "src/windows/wsl.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "wsl"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -62,14 +68,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 267.5
   },
   "right": {
     "id": "f581e8623655fcc7",
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/README.md",
+                "file": "src/linux/docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "docker 的反向链接列表"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/README.md",
+                "file": "src/linux/docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "docker 的出链列表"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -125,16 +139,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/README.md"
-              }
+                "file": "src/windows/wsl.md"
+              },
+              "icon": "lucide-list",
+              "title": "wsl 的大纲"
+            }
+          },
+          {
+            "id": "15d96e6ed36bbb9a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -143,14 +169,45 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0a4188409a3083ec",
+  "active": "dc62a2f44bcdcbc7",
   "lastOpenFiles": [
+    "src/csharp/README.md",
+    "src/csharp",
+    "src/python/python-ldap.md",
+    "src/python/k8s-manager.md",
+    "src/python/frp-tools.md",
+    "src/linux/UbuntuSetDevelopmentEnvironment.md",
+    "src/godot/README.md",
+    "src/godot",
+    "src/c sharp/README.md",
+    "src/windows/README.md",
+    "src/script/README.md",
+    "src/script",
+    "src/python/python ldap.md",
+    "src/python/nginx-ui.md",
+    "src/python/k8s manager.md",
+    "src/python/frp tools.md",
+    "src/python/docker-ui.md",
+    "src/linux/Set up a development environment based on Ubuntu.md",
+    "src/demo/README.md",
+    "src/脚本/README.md",
+    "src/windows/wsl.md",
     "src/intro.md",
+    "src/linux/基于ubuntu的开发环境搭建.md",
     "src/README.md",
-    "src/demo/disable.md",
-    "src/demo/encrypt.md"
+    "src/c sharp/c sharp.md",
+    "src/python/fastapi.md",
+    "src/python/docker-ui项目.md",
+    "src/python/README.md",
+    "src/python/python操作ldap.md",
+    "src/c sharp",
+    "未命名",
+    "src/脚本",
+    "src/windows",
+    "src/python"
   ]
 }

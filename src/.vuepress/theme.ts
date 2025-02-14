@@ -34,15 +34,32 @@ export default hopeTheme({
     description: "一个运维",
     intro: "/intro.html",
     medias: {
-      BiliBili: "https://example.com",
-      Email: "mailto:info@example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
+      BiliBili: "https://space.bilibili.com/13379189?spm_id_from=333.1007.0.0",
+      Email: "871507855@qq.com",
+      Gitee: "https://gitee.com/ahlcc",
+      GitHub: "https://github.com/w871507855",
       VuePressThemeHope: {
         icon: "https://theme-hope-assets.vuejs.press/logo.svg",
         link: "https://theme-hope.vuejs.press",
       },
     },
+  },
+
+  locales: {
+    "/": {
+      footer:
+        "主题使用 <a target='blank' href='https://theme-hope.vuejs.press/zh/'>vuepress-theme-hope</a>",
+
+      navbar: navbar,
+      sidebar: sidebar,
+    },
+
+    // "/en/": {
+    //   navbar: enNavbar,
+    //   sidebar: enSidebar,
+    //   footer:
+    //     "Theme by <a target='blank' href='https://theme-hope.vuejs.press/'>vuepress-theme-hope</a>",
+    // },
   },
 
   // 加密配置

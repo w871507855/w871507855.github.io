@@ -1,0 +1,29 @@
+{
+  "confirmDeletion": false,
+  "showDescriptions": false,
+  "showSourcesForDuplicates": true,
+  "debug": false,
+  "mainTrigger": "\\",
+  "extraTriggers": [],
+  "useExtraTriggers": false,
+  "triggerOnlyOnNewLine": false,
+  "queryPattern": {},
+  "bindings": [
+    {
+      "id": "editor:insert-link",
+      "icon": "lucide-link",
+      "name": "lj",
+      "mode": "any",
+      "chosen": false,
+      "selected": false
+    },
+    {
+      "id": "editor:toggle-code",
+      "icon": "lucide-code-2",
+      "name": "dmk",
+      "mode": "any",
+      "chosen": false,
+      "selected": false
+    }
+  ]
+}
