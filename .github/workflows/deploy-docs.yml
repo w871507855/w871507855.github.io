@@ -46,3 +46,12 @@ jobs:
           # 部署文档
           branch: gh-pages
           folder: src/.vuepress/dist
+
+      - name: 部署到云服务器
+        uses: appleseed/ssh-deploy@v1.0.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}  
+          user: ${{ secrets.DEPLOY_USER }}  
+          key: ${{ secrets.DEPLOY_KEY }}    
+          path: src/.vuepress/dist                   
+          target: ${{ secrets.DEPLOY_PATH }}

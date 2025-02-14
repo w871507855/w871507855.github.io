@@ -22,11 +22,16 @@ export default navbar([
     link: "/script/"
   },
   {
-    text: "c sharp",
-    link: "/c sharp/"
+    text: "nas",
+    link: "/nas/"
   },
   {
     text: "godot",
     link: "/godot/"
+  },
+  {
+    text: "csharp",
+    link: "/csharp/"
   }
+  
 ]);

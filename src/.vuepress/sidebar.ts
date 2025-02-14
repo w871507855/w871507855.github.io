@@ -6,8 +6,9 @@ export default sidebar({
   ],
   "/linux/": "structure",
   "/python/": "structure",
-  "/script/": "structure",
   "/windows/": "structure",
+  "/script/": "structure",
+  "/nas/": "structure",
+  "/godot/": "structure",
   "/csharp/": "structure",
-  "/godot/": "structure"
 });
