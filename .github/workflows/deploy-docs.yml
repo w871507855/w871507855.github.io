@@ -48,7 +48,7 @@ jobs:
           folder: src/.vuepress/dist
 
       - name: 部署到云服务器
-        uses: appleseed/ssh-deploy@v1.0.0
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DEPLOY_HOST }}  
           user: ${{ secrets.DEPLOY_USER }}  
