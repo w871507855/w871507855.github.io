@@ -6,7 +6,7 @@ export default navbar([
     link: "/",
   },
   {
-    text: "link",
+    text: "linux",
     link: "/linux/"
   },
   {

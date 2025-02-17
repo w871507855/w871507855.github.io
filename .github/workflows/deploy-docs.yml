@@ -52,6 +52,6 @@ jobs:
         with:
           host: ${{ secrets.DEPLOY_HOST }}  
           user: ${{ secrets.DEPLOY_USER }}  
-          key: ${{ secrets.DEPLOY_KEY }}    
+          key: ${{ secrets.SSH_PRIVATE_KEY }}    
           path: src/.vuepress/dist                   
           target: ${{ secrets.DEPLOY_PATH }}
