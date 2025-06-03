@@ -7,8 +7,8 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "李成成博客",
-  description: "李成成博客",
+  title: "lcc博客",
+  description: "lcc博客",
   locales: {
     "/": {
       lang: "zh-CN"

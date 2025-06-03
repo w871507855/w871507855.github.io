@@ -1,4 +1,4 @@
-## ubuntu安装docker
+# ubuntu安装docker
 
 ```shell
 # 卸载旧版本
@@ -13,6 +13,7 @@ echo \
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
+
 ### 使用脚本自动安装
 
 ```shell
@@ -23,6 +24,7 @@ sudo sh get-docker.sh --mirror Aliyun
 ## 设置镜像站加速
 
 编辑/etc/docker/daemon.json
+
 ```json
 {
 	"registry-mirrors": ["xxx"]
@@ -32,6 +34,7 @@ sudo sh get-docker.sh --mirror Aliyun
 ## 设置docker代理
 
 编辑/etc/systemd/system/docker.service.d/http-proxy.conf
+
 ```conf
 [Service]
 Environment="HTTP_PROXY=http://xxx.xxx.xxx.xxx:xxx"
@@ -43,4 +46,3 @@ Environment="HTTPS_PROXY=http://xxx.xxx.xxx.xxx:xxx"
 ```text
 sudo gpasswd -a ${USER} docker
 ```
-

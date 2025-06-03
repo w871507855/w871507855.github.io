@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "README"
             }
-          },
-          {
-            "id": "08bbd1de67690ed8",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 228.5
   },
   "right": {
     "id": "f581e8623655fcc7",
@@ -173,55 +160,55 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 247.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
       "canvas:新建白板": false,
+      "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "08bbd1de67690ed8",
+  "active": "dc62a2f44bcdcbc7",
   "lastOpenFiles": [
-    "src/linux/rsync.md",
-    "src/nas/README.md",
-    "src/nas",
-    "src/python/django-ninja.md",
+    "src/python/README.md",
     "src/linux/docker.md",
-    "src/godot/README.md",
-    "src/linux/kubernetes.md",
-    "src/linux/prometheus.md",
-    "src/linux/README.md",
-    "src/linux/UbuntuSetDevelopmentEnvironment.md",
-    "src/linux/vagrant.md",
+    "node_modules/execa/readme.md",
     "src/script/README.md",
-    "src/windows/README.md",
-    "src/windows/wsl.md",
-    "src/csharp/README.md",
-    "src/csharp",
     "src/python/python-ldap.md",
+    "src/python/nginx-ui.md",
     "src/python/k8s-manager.md",
     "src/python/frp-tools.md",
+    "src/python/fastapi.md",
+    "src/python/docker-ui.md",
+    "src/python/django-ninja.md",
+    "src/csharp/README.md",
+    "src/godot/README.md",
+    "src/linux/prometheus.md",
+    "src/linux/kubernetes.md",
+    "src/linux/README.md",
+    "src/linux/rsync.md",
+    "src/linux/UbuntuSetDevelopmentEnvironment.md",
+    "src/nas/README.md",
+    "src/nas",
+    "src/linux/vagrant.md",
+    "src/windows/README.md",
+    "src/windows/wsl.md",
+    "src/csharp",
     "src/godot",
     "src/c sharp/README.md",
     "src/script",
     "src/python/python ldap.md",
-    "src/python/nginx-ui.md",
     "src/python/k8s manager.md",
     "src/python/frp tools.md",
-    "src/python/docker-ui.md",
-    "src/linux/Set up a development environment based on Ubuntu.md",
-    "src/demo/README.md",
-    "src/脚本/README.md",
     "src/c sharp",
     "未命名",
     "src/脚本",

@@ -7,7 +7,7 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "李成成",
+    name: "lcc",
     url: "https://mister-hope.com",
   },
 

@@ -1,5 +1,4 @@
-
-## vagrant常用命令
+# vagrant常用命令
 
 - `autocomplete`：管理主机上的自动补全安装。
 - `box`：管理 Vagrant boxes，包括安装、移除等。
@@ -38,6 +37,7 @@
 # 初始化一个ubuntu2404的配置文件，会在当前目录下生成一个Vagrantfile
 vagrant init ubunut/jammy64
 ```
+
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241112085104.png)
 
 ## 配置文件详解
@@ -82,5 +82,3 @@ Vagrant.configure("2") do |config|
   SHELL
 end
 ```
-
-

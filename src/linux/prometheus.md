@@ -1,5 +1,9 @@
+# ubuntu安装prometheus
+
 ## 安装 prometheus
+
 ### 使用预编译的二进制安装包
+
 #### 下载地址
 
 [Download | Prometheus - Prometheus 监控系统](https://prometheus.ac.cn/download/)
@@ -10,6 +14,7 @@
 
 解压后的文件目录
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121111027.png)
+
 - prometheus 是主程序的二进制包
 - prometheus.yml 是主要配置文件
 
@@ -17,10 +22,12 @@
 
 解压文件可以放在/opt/prometheus目录下
 需要新建两个目录：
+
 - host：存放主机的配置文件
 - rules：存放报警规则配置文件
 
 #### /opt/prometheus/prometheus.yml
+
 ```yaml
 # my global config
 
@@ -52,6 +59,7 @@ scrape_configs:
 ```
 
 #### host目录下linux.yml
+
 ```yml
 - targets:
   - "xxx.xxx.xxx.xxx:9100"
@@ -61,6 +69,7 @@ scrape_configs:
 ```
 
 #### rules目录下的规则.yml
+
 ```yml
 groups:
 - name: linux
@@ -152,22 +161,28 @@ User=root
 WantedBy=multi-user.target
 ```
 
-
 ## 安装alertmanager
 
 ### 使用预编译的二进制安装包
 
 #### 下载地址
+
 [Download | Prometheus - Prometheus 监控系统](https://prometheus.ac.cn/download/)
+
 #### 解压压缩包
+
 `tar -zxvf alertmanager-xxx.linux-amd64.tar.gz`
 解压后的文件目录
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121135301.png)
+
 - alertmanager：二进制程序
 - alertmanager.yml：配置文件
+
 ### 配置alertmanager
+
 把解压后的文件放入到/opt/alertmanager
 /opt/alertmanager/alertmanager.yml
+
 ```yml
 route:
   # 警告分组
@@ -197,7 +212,9 @@ inhibit_rules:
 ```
 
 ### 把alertmanager注册为系统服务
+
 /etc/systemd/system/alertmanager.service
+
 ```yml
 [Unit]
 Description=alertmanager
@@ -214,14 +231,19 @@ WantedBy=multi-user.target
 ## 安装prometheus-webhook-dingtalk
 
 ### 下载
+
 [Releases · timonwong/prometheus-webhook-dingtalk](https://github.com/timonwong/prometheus-webhook-dingtalk/releases)
+
 ### 解压压缩包
+
 `tar -zxvf prometheus-webhook-dingtalk`
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121144946.png)
 
 ### 配置推送钉钉机器人
+
 把解压的文件放到/opt/prometheus-webhook-dingtalk
 /opt/prometheus-webhook-dingtalk/config.yml
+
 ```
 
 targets:
@@ -234,7 +256,9 @@ targets:
 
 - 钉钉机器人的webhook地址对应配置文件的url
 - 钉钉机器人的加签数据对应的配置文件的secret
+
 ### 配置钉钉
+
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121150740.png)
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121150811.png)
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121150832.png)
@@ -242,7 +266,9 @@ targets:
 ![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121151029.png)
 
 ### 注册成系统服务
+
 /etc/systemd/system/prometheus-webhook-dingtalk.service
+
 ```yml
 [Unit]
 Description=prometheus-webhook-dingtalk
@@ -257,7 +283,7 @@ WantedBy=multi-user.target
 ```
 
 ## 安装node_exporter
+
 ### 下载地址
 
 [Tags · prometheus/node_exporter](https://github.com/prometheus/node_exporter/tags)
-
