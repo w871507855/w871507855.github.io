@@ -1,53 +1,54 @@
 {
   "choices": [
     {
-      "id": "623be9fe-0738-44e6-871b-fe8e86f20cab",
-      "name": "h1",
-      "type": "Macro",
+      "id": "91bd2d97-606b-484d-aa66-ad2817c71c8f",
+      "name": "daimakuai",
+      "type": "Template",
       "command": false,
-      "macroId": "2e747125-0e37-4355-a113-0c110ce5d885"
-    },
-    {
-      "id": "bd2cda98-9a18-49a5-8cc8-c60194707fd2",
-      "name": "h2",
-      "type": "Macro",
-      "command": false,
-      "macroId": "bdbf0203-17d5-4e70-9c52-8ec832c2d13c"
+      "templatePath": "",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "folder": {
+        "enabled": false,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "macros": [
     {
-      "name": "h1",
-      "id": "2e747125-0e37-4355-a113-0c110ce5d885",
+      "name": "dmk",
+      "id": "ed02dca1-d879-4226-9edd-074dc59cb123",
       "commands": [
         {
-          "name": "设为小标题 1",
+          "name": "代码块",
           "type": "Obsidian",
-          "id": "355ef2aa-e998-421d-9fd4-e18d34921ca0",
-          "commandId": "editor:set-heading-1"
+          "id": "5a14265d-3124-47d6-9a25-010331647e61",
+          "commandId": "editor:toggle-code"
         }
       ],
-      "runOnStartup": false
-    },
-    {
-      "name": "h2",
-      "id": "bdbf0203-17d5-4e70-9c52-8ec832c2d13c",
-      "commands": [
-        {
-          "name": "设为小标题 2",
-          "type": "Obsidian",
-          "id": "beaf57bc-9bd1-4361-a595-ce24da27295b",
-          "commandId": "editor:set-heading-2"
-        }
-      ],
-      "runOnStartup": false
+      "runOnStartup": true
     }
   ],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "",
   "announceUpdates": true,
-  "version": "1.11.4",
+  "version": "1.13.3",
   "disableOnlineFeatures": true,
   "enableRibbonIcon": false,
   "ai": {

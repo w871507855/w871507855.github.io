@@ -3,27 +3,143 @@
   "showDescriptions": false,
   "showSourcesForDuplicates": true,
   "debug": false,
-  "mainTrigger": "\\",
+  "mainTrigger": "/",
   "extraTriggers": [],
-  "useExtraTriggers": false,
+  "useExtraTriggers": true,
   "triggerOnlyOnNewLine": false,
   "queryPattern": {},
   "bindings": [
     {
-      "id": "editor:insert-link",
-      "icon": "lucide-link",
-      "name": "lj",
+      "name": "Table",
+      "id": "editor:insert-table",
+      "icon": "table-2",
       "mode": "any",
-      "chosen": false,
-      "selected": false
+      "triggerMode": "anywhere"
     },
     {
-      "id": "editor:toggle-code",
-      "icon": "lucide-code-2",
-      "name": "dmk",
+      "name": "Callout",
+      "id": "editor:insert-callout",
+      "icon": "indent",
       "mode": "any",
-      "chosen": false,
-      "selected": false
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Code",
+      "id": "editor:insert-codeblock",
+      "icon": "terminal",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Math",
+      "id": "editor:insert-mathblock",
+      "icon": "percent",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Embed",
+      "id": "editor:insert-embed",
+      "icon": "sticky-note",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Attachment",
+      "id": "editor:attach-file",
+      "icon": "paperclip",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Property",
+      "id": "markdown:add-metadata-property",
+      "icon": "plus-circle",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Admonition",
+      "id": "obsidian-admonition:insert-admonition",
+      "icon": "indent",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Excalidraw",
+      "id": "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab",
+      "icon": "image",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Task",
+      "id": "obsidian-tasks-plugin:edit-task",
+      "icon": "check-circle",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Template",
+      "id": "templater-obsidian:insert-templater",
+      "icon": "book-copy",
+      "mode": "any",
+      "triggerMode": "anywhere"
+    },
+    {
+      "name": "Citation",
+      "id": "zotlit:insert-markdown-citation",
+      "icon": "book-marked",
+      "mode": "desktop",
+      "triggerMode": "anywhere"
+    },
+    {
+      "id": "editor:insert-codeblock",
+      "icon": "lucide-code",
+      "name": "dmk",
+      "mode": "any"
+    },
+    {
+      "id": "editor:insert-table",
+      "icon": "lucide-table",
+      "name": "bg",
+      "mode": "any"
+    },
+    {
+      "id": "editor:set-heading-1",
+      "icon": "heading-glyph",
+      "name": "h1",
+      "mode": "any"
+    },
+    {
+      "id": "editor:set-heading-2",
+      "icon": "heading-glyph",
+      "name": "h2",
+      "mode": "any"
+    },
+    {
+      "id": "editor:set-heading-3",
+      "icon": "heading-glyph",
+      "name": "h3",
+      "mode": "any"
+    },
+    {
+      "id": "editor:set-heading-4",
+      "icon": "heading-glyph",
+      "name": "h4",
+      "mode": "any"
+    },
+    {
+      "id": "editor:set-heading-5",
+      "icon": "heading-glyph",
+      "name": "h5",
+      "mode": "any"
+    },
+    {
+      "id": "editor:set-heading-6",
+      "icon": "heading-glyph",
+      "name": "h6",
+      "mode": "any"
     }
   ]
 }

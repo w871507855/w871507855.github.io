@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "87e9b6800cb12311",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce8d89e16818d910",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb6290a84507244c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/python/k8s管理页面项目.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "k8s管理页面项目"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2369a2e05159bd28",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccae5a3e1a974023",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5fb1e0de501f028c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "bf0bba6d21feeb0e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "cc49deb49b870277",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 298.5
+  },
+  "right": {
+    "id": "3848b263ffba75ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "23acac0834e30cae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04182481bab79c6d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/python/linux-mcp.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "linux-mcp 的反向链接列表"
+            }
+          },
+          {
+            "id": "4a29d7c27e61b520",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/python/linux-mcp.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "linux-mcp 的出链列表"
+            }
+          },
+          {
+            "id": "01369c482eb7e256",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "4c28a48ef4049bc9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/python/k8s管理页面项目.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "k8s管理页面项目 的大纲"
+            }
+          },
+          {
+            "id": "6ac7b0cee0b33208",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "bb6290a84507244c",
+  "lastOpenFiles": [
+    "src/python/linux-mcp.md",
+    "src/python/README.md",
+    "src/python/frp-tools.md",
+    "src/python/k8s-manager.md",
+    "src/python/docker-ui项目.md",
+    "src/python/docker-ui.md",
+    "src/python/django-ninja.md",
+    "src/nas/README.md",
+    "src/linux/vagrant.md",
+    "src/linux/UbuntuSetDevelopmentEnvironment.md",
+    "src/linux/rsync.md",
+    "src/linux/README.md",
+    "src/linux/prometheus.md",
+    "src/linux/kubernetes.md",
+    "src/linux/docker.md"
+  ]
+}
