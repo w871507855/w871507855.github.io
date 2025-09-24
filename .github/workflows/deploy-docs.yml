@@ -47,18 +47,17 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
 
-      - name: 使用私钥部署到云服务器
-        uses: appleboy/scp-action@v0.1.3
-        continue-on-error: true
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}  
-          username: ${{ secrets.DEPLOY_USER }}  
-          key: ${{ secrets.SSH_PRIVATE_KEY }}    
-          source: "src/.vuepress/dist/*"
-          target: ${{ secrets.DEPLOY_PATH }}
+      # - name: 使用私钥部署到云服务器
+      #   uses: appleboy/scp-action@v0.1.3
+      #   continue-on-error: true
+      #   with:
+      #     host: ${{ secrets.DEPLOY_HOST }}  
+      #     username: ${{ secrets.DEPLOY_USER }}  
+      #     key: ${{ secrets.SSH_PRIVATE_KEY }}    
+      #     source: "src/.vuepress/dist/*"
+      #     target: ${{ secrets.DEPLOY_PATH }}
       
       - name: 使用密码部署到云服务器
-        if: steps.deploy-with-key.outcome == 'failure'
         uses: appleboy/ssh-action@v0.1.3
         with:
           host: ${{ secrets.DEPLOY_HOST }}  
