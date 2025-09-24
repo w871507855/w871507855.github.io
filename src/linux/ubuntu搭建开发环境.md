@@ -1,15 +1,25 @@
+# ubuntu搭建开发环境
+
 ## python相关
+
 ### 使用uv搭建python环境
+
 #### 1. 安装uv
+
 参考：[uv](https://docs.astral.sh/uv/)
+
 #### 2. 创建python项目
+
 创建一个server目录，使用python3.11
 `uv init server -p 3.11`
 如果目录已存在，直接使用uv来初始化python环境
 `uv init -p 3.11`
+
 #### 3. 创建虚拟环境
+
 创建一个.venv的环境使用python3.11
 `uv venv -p 3.11`
+
 ### 使用conda搭建python开发环境
 
 参考：[anaconda | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
