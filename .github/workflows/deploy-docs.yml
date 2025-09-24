@@ -48,10 +48,10 @@ jobs:
           folder: src/.vuepress/dist
 
       - name: 部署到云服务器
-        uses: appleboy/ssh-action@master
+        uses: appleboy/scp-action@v0.1.3
         with:
           host: ${{ secrets.DEPLOY_HOST }}  
-          user: ${{ secrets.DEPLOY_USER }}  
+          username: ${{ secrets.DEPLOY_USER }}  
           key: ${{ secrets.SSH_PRIVATE_KEY }}    
-          path: src/.vuepress/dist                   
+          source: "src/.vuepress/dist/*"
           target: ${{ secrets.DEPLOY_PATH }}
