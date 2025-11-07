@@ -34,5 +34,28 @@ HTTPS_PROXY=http://xxx.xxx.xxx.xxx:xxx
 
 kubeconfig: /etc/rancher/k3s/k3s.yaml
 
+## pod
+
+- pod是k8s的基本单元
+### 编写一个简单的pod
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busbox
+  namespace: test
+  labels:
+    app: busbox
+
+spec:
+  containers:
+  - name: busybox
+    image: busbox
+```
+### pod定义参数
+
+
+
+
 
 

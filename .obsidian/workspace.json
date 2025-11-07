@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c35a832f63d791ae",
+        "id": "304a7aab30b3fc0d",
         "type": "tabs",
         "children": [
           {
-            "id": "95daef2701e4c6e3",
+            "id": "1022012a759f3edb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "src/web/readme.md",
-                "mode": "source",
-                "source": false
+                "aFile": "src/linux/云原生学习.md",
+                "bFile": "src/linux/云原生学习.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "readme"
+              "icon": "diff",
+              "title": "Diff: 云原生学习"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 432.5
+    "width": 243.5
   },
   "right": {
     "id": "f581e8623655fcc7",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/python/k8s-manager.md",
+                "file": "src/python/fastapi-react-admin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,21 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "k8s-manager 的反向链接列表"
-            }
-          },
-          {
-            "id": "776976118cf9d293",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "src/python/linux-mcp.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "linux-mcp 的出链列表"
+              "title": "fastapi-react-admin 的反向链接列表"
             }
           },
           {
@@ -142,13 +128,26 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/linux/intel ac9560在ubuntu1604下安装wifi和蓝牙驱动.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "intel ac9560在ubuntu1604下安装wifi和蓝牙驱动 的大纲"
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "776976118cf9d293",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/python/fastapi-react-admin.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "fastapi-react-admin 的出链列表"
             }
           },
           {
@@ -166,7 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 445.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,35 +180,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "95daef2701e4c6e3",
+  "active": "1022012a759f3edb",
   "lastOpenFiles": [
+    "src/python/ldap相关.md",
+    "src/python/asyncio学习.md",
+    "src/python/智能运维项目.md",
     "src/python/README.md",
-    "src/python/nginx-ui项目.md",
-    "src/python/nginx-ui.md",
+    "src/linux/云原生学习.md",
+    "src/linux/prometheus.md",
+    "src/linux/mysql.md",
+    "src/linux/kubernetes.md",
+    "src/linux/docker.md",
+    "src/python/django-ninja.md",
+    "src/windows/wsl.md",
+    "src/intro.md",
+    "src/web/readme.md",
+    "src/linux/intel ac9560在ubuntu1604下安装wifi和蓝牙驱动.md",
     "src/python/mcp开发.md",
+    "src/python/nginx-ui.md",
+    "src/python/nginx-ui项目.md",
     "src/python/linux-mcp.md",
-    "src/python/k8s管理页面项目.md",
     "src/python/k8s-manager.md",
     "src/python/frp-tools.md",
+    "src/python/fastapi-react-admin.md",
     "src/python/fastapi.md",
-    "src/python/docker-ui.md",
     "src/python/docker-ui项目.md",
-    "src/python/django-ninja.md",
-    "src/python/智能运维项目.md",
-    "src/linux/intel ac9560在ubuntu1604下安装wifi和蓝牙驱动.md",
+    "src/python/docker-ui.md",
+    "src/python/k8s管理页面项目.md",
     "Excalidraw/智能运维项目 2025-09-18 11.42.20.excalidraw.md",
-    "Excalidraw/智能运维项目 2025-09-18 11.39.39.excalidraw.md",
-    "Excalidraw/Drawing 2025-09-18 11.36.29.excalidraw.md",
-    "Excalidraw/Drawing 2025-08-27 10.06.30.excalidraw.md",
     "Excalidraw/Drawing 2025-08-27 10.06.30.excalidraw.png",
-    "src/linux/zerotier.md",
-    "src/nas/README.md",
-    "src/linux/rsync.md",
-    "src/linux/ubuntu搭建开发环境.md",
-    "src/linux/UbuntuSetDevelopmentEnvironment.md",
-    "src/linux/README.md",
-    "src/linux/README(lcc-pc的冲突副本2_2025-08-15 11-47-18).md",
-    "src/linux/README(lcc-pc的冲突副本1_2025-08-15 11-38-33).md",
     "src/web",
     "未命名 1.canvas",
     "未命名.base",
