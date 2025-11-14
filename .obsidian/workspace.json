@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "304a7aab30b3fc0d",
+        "id": "94d67594117f3e2c",
         "type": "tabs",
         "children": [
           {
-            "id": "1022012a759f3edb",
+            "id": "a8786939a2b681f5",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "src/linux/云原生学习.md",
-                "bFile": "src/linux/云原生学习.md",
-                "aRef": ""
+                "file": "src/python/fastapi.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 云原生学习"
+              "icon": "lucide-file",
+              "title": "fastapi"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 234.5
   },
   "right": {
     "id": "f581e8623655fcc7",
@@ -128,12 +128,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/python/fastapi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "fastapi 的大纲"
             }
           },
           {
@@ -161,11 +162,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 445.5
+    "width": 302.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,8 +181,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1022012a759f3edb",
+  "active": "a8786939a2b681f5",
   "lastOpenFiles": [
+    "src/linux/ubuntu搭建开发环境.md",
+    "src/linux/UbuntuSetDevelopmentEnvironment.md",
+    "src/linux/vagrant.md",
+    "src/linux/zerotier.md",
+    "src/linux/intel ac9560在ubuntu1604下安装wifi和蓝牙驱动.md",
+    "src/linux/docker.md",
+    "src/linux/kubernetes.md",
+    "src/python/mcp开发.md",
     "src/python/ldap相关.md",
     "src/python/asyncio学习.md",
     "src/python/智能运维项目.md",
@@ -189,14 +198,10 @@
     "src/linux/云原生学习.md",
     "src/linux/prometheus.md",
     "src/linux/mysql.md",
-    "src/linux/kubernetes.md",
-    "src/linux/docker.md",
     "src/python/django-ninja.md",
     "src/windows/wsl.md",
     "src/intro.md",
     "src/web/readme.md",
-    "src/linux/intel ac9560在ubuntu1604下安装wifi和蓝牙驱动.md",
-    "src/python/mcp开发.md",
     "src/python/nginx-ui.md",
     "src/python/nginx-ui项目.md",
     "src/python/linux-mcp.md",
@@ -204,10 +209,6 @@
     "src/python/frp-tools.md",
     "src/python/fastapi-react-admin.md",
     "src/python/fastapi.md",
-    "src/python/docker-ui项目.md",
-    "src/python/docker-ui.md",
-    "src/python/k8s管理页面项目.md",
-    "Excalidraw/智能运维项目 2025-09-18 11.42.20.excalidraw.md",
     "Excalidraw/Drawing 2025-08-27 10.06.30.excalidraw.png",
     "src/web",
     "未命名 1.canvas",

@@ -536,3 +536,66 @@ async def update_permission(permission_update: PermissionUpdate):
         "roles": [role for role in permission.roles]
     }
 ```
+
+## fastapi项目使用pydantic_settings读取环境变量
+
+所需的第三方库/
+`pip install pydantic_settings`
+
+- 项目在本地测试时使用.env中的环境变量
+- git提交项目时，不要提交.env，而是复制.env为.env_temp，把.env_temp中的配置信息删除
+
+.env_temp
+```
+# 数据库连接信息
+DB_URL=mysql://xxx:xxx@xxx.xxx.xxx.xxx:3306/xxx?charset=utf8mb4
+# 应用密钥
+SECRET_KEY=super-secret-key-change
+# 加密算法
+ALGORITHM=HS256
+# 访问令牌过期时间（分钟）
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+```
+
+config.py
+```
+from pydantic_settings import BaseSettings
+from typing import Optional
+
+class Settings(BaseSettings):
+    """应用配置，支持从环境变量加载。"""
+
+    secret_key: Optional[str] = "super-secret-key-change"
+    algorithm: Optional[str] = "HS256"
+    access_token_expire_minutes: Optional[int] = 60
+
+    # 默认按 README 要求配置 MySQL；可通过环境变量 DB_URL 覆盖
+    db_url: Optional[str] = None
+    model_config = {
+        "env_file": ".env",
+        "env_file_encoding": "utf-8",
+        "case_sensitive": False,
+    }
+
+settings = Settings()
+```
+
+其他py文件导入使用
+db.py
+```
+from tortoise.contrib.fastapi import register_tortoise
+from fastapi import FastAPI
+from app.config import settings
+
+
+def setup_db(app: FastAPI) -> None:
+    """注册 Tortoise ORM 到 FastAPI 应用（由插件在启动/关闭时管理连接）。"""
+    register_tortoise(
+        app,
+        db_url=settings.db_url,
+        modules={"models": ["app.models"]},
+        generate_schemas=True,
+        add_exception_handlers=True,
+    )
+```
+
