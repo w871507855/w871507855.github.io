@@ -37,8 +37,7 @@
 # 初始化一个ubuntu2404的配置文件，会在当前目录下生成一个Vagrantfile
 vagrant init ubunut/jammy64
 ```
-
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241112085104.png)
+![20241112085104.png](https://img.gouwang.top/20241112085104.png)
 
 ## 配置文件详解
 

@@ -13,7 +13,7 @@
 `tar -zxvf prometheus-xxx.linux-amd64.tar.gz`
 
 解压后的文件目录
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121111027.png)
+![image.png](https://img.gouwang.top/20241121111027.png)
 
 - prometheus 是主程序的二进制包
 - prometheus.yml 是主要配置文件
@@ -173,7 +173,7 @@ WantedBy=multi-user.target
 
 `tar -zxvf alertmanager-xxx.linux-amd64.tar.gz`
 解压后的文件目录
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121135301.png)
+![image.png](https://img.gouwang.top/20241121135301.png)
 
 - alertmanager：二进制程序
 - alertmanager.yml：配置文件
@@ -237,7 +237,7 @@ WantedBy=multi-user.target
 ### 解压压缩包
 
 `tar -zxvf prometheus-webhook-dingtalk`
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121144946.png)
+![image.png](https://img.gouwang.top/20241121144946.png)
 
 ### 配置推送钉钉机器人
 
@@ -259,11 +259,11 @@ targets:
 
 ### 配置钉钉
 
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121150740.png)
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121150811.png)
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121150832.png)
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121150936.png)
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241121151029.png)
+![image.png](https://img.gouwang.top/20241121150740.png)
+![image.png](https://img.gouwang.top/20241121150811.png)
+![image.png](https://img.gouwang.top/20241121150832.png)
+![image.png](https://img.gouwang.top/20241121150936.png)
+![image.png](https://img.gouwang.top/20241121150936.png)
 
 ### 注册成系统服务
 

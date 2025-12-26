@@ -29,7 +29,7 @@ sudo reboot
 ## 安装蓝牙驱动
 
 安装wifi固件后，有可能会提示缺少蓝牙的固件
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20250724102606.png)
+![image.png](https://img.gouwang.top/20250724102606.png)
 说明 **Intel 蓝牙固件缺失**，对应你这块 Intel 9560 蓝牙模块所需的文件是：
 
 - `/lib/firmware/intel/ibt-19-0-1.sfi`

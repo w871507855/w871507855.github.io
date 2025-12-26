@@ -3,5 +3,5 @@
 ```
 w
 ```
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241205101300.png)
+![image.png](https://img.gouwang.top/20241205101300.png)
 

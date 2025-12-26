@@ -6,8 +6,8 @@
 ### 进入微软商店
 
 搜索linux，选择想安装的linux，点击安装
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241113110627.png)
-![image.png](https://img-1254407900.cos.ap-shanghai.myqcloud.com/20241113110642.png)
+![image.png](https://img.gouwang.top/20241113110627.png)
+![image.png](https://img.gouwang.top/20241113110642.png)
 
 ### 安装
 
