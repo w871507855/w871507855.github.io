@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/windows/wsl.md",
+                "file": "src/nas/飞牛.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wsl"
+              "title": "飞牛"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 279.5
   },
   "right": {
     "id": "f581e8623655fcc7",
@@ -128,13 +128,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/windows/wsl.md",
+                "file": "src/nas/飞牛.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "wsl 的大纲"
+              "title": "飞牛 的大纲"
             }
           },
           {
@@ -183,6 +183,13 @@
   },
   "active": "15d96e6ed36bbb9a",
   "lastOpenFiles": [
+    "src/nas/README.md",
+    "src/nas/飞牛.md",
+    "src/linux/未命名.md",
+    "src/golang/golang开发博客项目.md",
+    "src/csharp/README.md",
+    "src/golang",
+    "src/windows/wsl.md",
     "src/linux/vagrant.md",
     "src/python/智能运维项目.md",
     "[20241112085104.md",
@@ -203,13 +210,7 @@
     "src/python/nginx-ui项目.md",
     "src/python/mcp开发.md",
     "src/python/ldap相关.md",
-    "src/python/django-ninja.md",
-    "src/linux/云原生学习.md",
-    "src/linux/ansible.md",
-    "src/linux/docker.md",
-    "src/linux/docker(lcc-pc的冲突副本1_2025-11-14 09-09-52).md",
     "未命名 1.base",
-    "src/linux/ubuntu搭建开发环境.md",
     "Excalidraw/Drawing 2025-08-27 10.06.30.excalidraw.png",
     "src/web",
     "未命名 1.canvas",
@@ -220,7 +221,6 @@
     "src/csharp",
     "src/godot",
     "src/script",
-    "src/c sharp",
-    "未命名"
+    "src/c sharp"
   ]
 }
