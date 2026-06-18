@@ -18,20 +18,12 @@ export default navbar([
     link: "/windows/"
   },
   {
-    text: "script",
-    link: "/script/"
-  },
-  {
     text: "nas",
     link: "/nas/"
   },
   {
     text: "godot",
     link: "/godot/"
-  },
-  {
-    text: "csharp",
-    link: "/csharp/"
   }
   
 ]);

@@ -5,7 +5,7 @@ icon: home
 title: lcc博客
 bgImage: /assets/images/cover2.jpg
 bgImageStyle: {
-  height: '95vh'
+  height: '90vh'
 }
 heroImage: 
 heroFullScreen: true
