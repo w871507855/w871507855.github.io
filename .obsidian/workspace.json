@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/intro.md",
+                "file": "src/linux/git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "intro"
+              "title": "git"
             }
           }
         ]
@@ -128,13 +128,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/nas/飞牛.md",
+                "file": "src/linux/git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "飞牛 的大纲"
+              "title": "git 的大纲"
             }
           },
           {
@@ -183,11 +183,13 @@
   },
   "active": "c09028d35c64778d",
   "lastOpenFiles": [
+    "src/linux/ai工具.md",
+    "src/linux/git.md",
+    "src/intro.md",
     "src/godot/README.md",
     "src/csharp/README.md",
     "src/golang/golang开发博客项目.md",
     "src/README.md",
-    "src/intro.md",
     "src/windows/wsl.md",
     "src/windows/README.md",
     "src/web/readme.md",
@@ -207,8 +209,6 @@
     "src/python/docker-ui.md",
     "src/python/fastapi.md",
     "src/python/k8s-manager.md",
-    "src/python/fastapi-react-admin.md",
-    "src/python/frp-tools.md",
     "src/golang",
     "未命名 1.base",
     "Excalidraw/Drawing 2025-08-27 10.06.30.excalidraw.png",
