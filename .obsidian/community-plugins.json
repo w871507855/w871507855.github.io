@@ -2,5 +2,6 @@
   "obsidian-image-auto-upload-plugin",
   "obsidian-git",
   "slash-commander",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "remotely-save"
 ]
