@@ -62,9 +62,9 @@ EOF
 ```
 ### 容器创建
 #### 1. 创建容器
-![image.png](https://img.gouwang.top/20260707114415878.png)
+![image.png](https://img.lichengcheng.top/20260707114415878.png)
 #### 2. 配置都可以默认，内存选择时不要添加Swap
-![image.png](https://img.gouwang.top/20260707114519705.png)
+![image.png](https://img.lichengcheng.top/20260707114519705.png)
 
 ### 在pve宿主机修改容器配置
 #### 1. 在/etc/pve/lxc/$ID.conf添加参数

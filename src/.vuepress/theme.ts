@@ -4,11 +4,11 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://gouwang.top",
+  hostname: "https://lichengcheng.top",
 
   author: {
     name: "lcc",
-    url: "https://gouwang.top",
+    url: "https://lichengcheng.top",
   },
 
   iconAssets: "fontawesome-with-brands",
