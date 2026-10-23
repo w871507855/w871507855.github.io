@@ -1,3 +1,11 @@
+---
+date: 2025-09-24
+category: Linux
+tag:
+  - Ubuntu
+  - 环境配置
+---
+
 # ubuntu搭建开发环境
 
 ## python相关

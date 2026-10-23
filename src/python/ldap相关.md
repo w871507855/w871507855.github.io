@@ -1,3 +1,11 @@
+---
+date: 2025-11-07
+category: Python
+tag:
+  - LDAP
+  - 认证
+---
+
 # ldap相关
 ## 使用的库
 ```

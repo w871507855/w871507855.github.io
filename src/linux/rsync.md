@@ -1,3 +1,11 @@
+---
+date: 2025-02-14
+category: Linux
+tag:
+  - rsync
+  - 备份
+---
+
 # ubuntu rsync自动同步
 # 服务器端设置：
 

@@ -1,3 +1,12 @@
+---
+title: client-go 学习手册
+date: 2026-10-12
+category: Golang
+tag:
+  - Go
+  - Kubernetes
+---
+
 ## 安装依赖
 
 ```shell

@@ -1,3 +1,11 @@
+---
+date: 2025-09-24
+category: Linux
+tag:
+  - ZeroTier
+  - 内网穿透
+---
+
 # zerotier
 
 ## 使用docker-zerotier-planet自建服务器

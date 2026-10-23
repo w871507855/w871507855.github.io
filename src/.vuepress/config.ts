@@ -7,13 +7,18 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "",
-  description: "",
+  title: "lcc 的运维笔记",
+  description: "Linux、云原生与 Python 的实践笔记",
   locales: {
     "/": {
       lang: "zh-CN"
     }
   },
+  head: [
+    ["meta", { name: "theme-color", content: "#2563eb" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" }],
+  ],
   theme,
   pagePatterns: ["**/*.md", "!*.snippet.md", "!.vuepress", "!node_modules"],
   extendsMarkdown: (md) => {

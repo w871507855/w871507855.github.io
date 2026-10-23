@@ -1,3 +1,11 @@
+---
+date: 2026-06-18
+category: Linux
+tag:
+  - AI
+  - 工具
+---
+
 # ai工具
 ## opencode
 ### 配置文件设置自定义模型
@@ -80,3 +88,4 @@ custom_providers:
   api_key: xxx
   model: deepseek-v4-pro
 ```
+

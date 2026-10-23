@@ -1,3 +1,11 @@
+---
+date: 2025-02-14
+category: Python
+tag:
+  - Django
+  - 后端
+---
+
 # 使用django-ninja开发用户登录和用户管理相关接口：
 
 ## 简介：

@@ -1,3 +1,12 @@
+---
+title: WSL 安装
+date: 2026-10-12
+category: Windows
+tag:
+  - WSL
+  - Windows
+---
+
 ## wsl安装
 
 [安装 WSL | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/wsl/install)

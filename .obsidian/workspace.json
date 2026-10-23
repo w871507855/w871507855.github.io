@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "11682764b7404d57",
+        "id": "b7b03244a7a9d1c9",
         "type": "tabs",
         "children": [
           {
-            "id": "523f99906ba69d22",
+            "id": "3caf0c998a1cdd8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/golang/client-go学习手册.md",
+                "file": "src/linux/ai工具.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "client-go学习手册"
+              "title": "ai工具"
             }
           }
         ]
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gouwang.top",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,12 +76,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 221.5
   },
   "right": {
     "id": "f581e8623655fcc7",
@@ -131,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/golang/client-go学习手册.md",
+                "file": "src/linux/ai工具.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -162,13 +161,34 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "b7828f05df5cba4f",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1792725513959-ace2o4p",
+                      "conversationId": "conv-1792725593907-hqay0fxag"
+                    }
+                  ],
+                  "activeTabId": "tab-1792725513959-ace2o4p"
+                }
+              },
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 530.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,47 +201,48 @@
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "remotely-save:Remotely Save": false
+      "remotely-save:Remotely Save": false,
+      "realclaudian:Open Claudian": false
     }
   },
-  "active": "83ce638f31a8a8aa",
+  "active": "15d96e6ed36bbb9a",
   "lastOpenFiles": [
+    "src/golang/README.md",
     "src/golang/golang开发博客项目.md",
     "src/golang/client-go学习手册.md",
-    "src/linux/kubernetes.md",
-    "src/linux/未命名.md",
-    "src/linux/ai工具.md",
-    "[20241112085104.md",
-    "src/linux/git.md",
-    "node_modules/vuepress/bin/vuepress.js",
-    "node_modules/vuepress/bin/vuepress-webpack.js",
-    "node_modules/vuepress/bin/vuepress-vite.js",
-    "node_modules/vuepress/bin",
-    "node_modules/unicorn-magic/readme.md",
-    "node_modules/unicorn-magic/package.json",
-    "node_modules/unicorn-magic/node.js",
-    "node_modules/unicorn-magic/node.d.ts",
-    "node_modules/unicorn-magic/license",
-    "node_modules/unicorn-magic/default.js",
-    "node_modules/unicorn-magic/default.d.ts",
-    "node_modules/undici/types/README.md",
-    "node_modules/supports-color/readme.md",
-    "node_modules/strip-ansi/readme.md",
-    "node_modules/string-width/readme.md",
-    "node_modules/stdin-discarder/readme.md",
-    "node_modules/slash/readme.md",
-    "node_modules/restore-cursor/readme.md",
-    "node_modules/regex-utilities/README.md",
-    "node_modules/queue-microtask/README.md",
-    "node_modules/postcss-load-config/README.md",
-    "node_modules/perfect-debounce/README.md",
-    "node_modules/onetime/readme.md",
-    "node_modules/npm-run-path/node_modules/path-key/readme.md",
-    "node_modules/npm-run-path/readme.md",
-    "node_modules/mitt/README.md",
-    "node_modules/mimic-function/readme.md",
-    "node_modules/mdurl/README.md",
-    "node_modules/linkify-it/README.md",
+    "src/godot/README.md",
+    "src/python/智能运维项目.md",
+    "src/web/readme.md",
+    "src/windows/wsl.md",
+    "src/windows/README.md",
+    "原始资料 raw/已摄入/ai工具.md",
+    "知识库 wiki/日志 log.md",
+    "原始资料 raw/已摄入/zerotier.md",
+    "原始资料 raw/已摄入/vagrant.md",
+    "原始资料 raw/已摄入/ubuntu搭建开发环境.md",
+    "原始资料 raw/已摄入/terraform.md",
+    "原始资料 raw/已摄入/SRE运维.md",
+    "原始资料 raw/已摄入/sre方法论.md",
+    "原始资料 raw/已摄入/shell学习.md",
+    "原始资料 raw/已摄入/rsync.md",
+    "原始资料 raw/已摄入/README.md",
+    "原始资料 raw/已摄入/prometheus.md",
+    "原始资料 raw/已摄入/nginx.md",
+    "原始资料 raw/已摄入/mysql.md",
+    "原始资料 raw/已摄入/kubernetes.md",
+    "原始资料 raw/已摄入/jenkins.md",
+    "原始资料 raw/已摄入/intel ac9560在ubuntu1604下安装wifi和蓝牙驱动.md",
+    "原始资料 raw/已摄入/gitlab.md",
+    "知识库 wiki/分析 analyses",
+    "知识库 wiki/概念 concepts",
+    "知识库 wiki/实体 entities",
+    "知识库 wiki/资料摘要 sources",
+    "报告 reports",
+    "原始资料 raw/附件 assets",
+    "原始资料 raw/已摄入",
+    "原始资料 raw",
+    "知识库 wiki",
+    "未命名 3.base",
     "node_modules/pngjs/coverage/lcov-report/sort-arrow-sprite.png",
     "node_modules/pngjs/coverage/lcov-report/favicon.png",
     "node_modules/lit/logo.svg",

@@ -1,3 +1,8 @@
+---
+title: Linux 常用命令
+icon: fa-brands fa-linux
+---
+
 ## linux
 
 ### 系统版本

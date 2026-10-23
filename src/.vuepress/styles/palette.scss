@@ -1,1 +1,12 @@
 // you can change colors here
+
+// 字体
+$vp-font:
+  '-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"';
+$vp-font-heading: $vp-font;
+$vp-font-mono:
+  '"JetBrains Mono", "Cascadia Code", "Fira Code", Consolas, Monaco, "Courier New", monospace';
+
+// 内容宽度
+$content-width: 820px;
+$home-page-width: 1180px;

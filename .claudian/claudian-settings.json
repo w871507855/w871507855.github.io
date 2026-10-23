@@ -1,0 +1,192 @@
+{
+  "userName": "",
+  "permissionMode": "auto",
+  "model": "haiku",
+  "effortLevel": "high",
+  "serviceTier": "default",
+  "enableAutoTitleGeneration": true,
+  "titleGenerationLocale": "",
+  "titleGenerationModel": "",
+  "excludedTags": [],
+  "mediaFolder": "",
+  "systemPrompt": "",
+  "sharedEnvironmentVariables": "",
+  "envSnippets": [],
+  "customContextLimits": {},
+  "keyboardNavigation": {
+    "scrollUpKey": "w",
+    "scrollDownKey": "s",
+    "focusInputKey": "i"
+  },
+  "requireCommandOrControlEnterToSend": false,
+  "locale": "zh-CN",
+  "providerConfigs": {
+    "claude": {
+      "enabled": true,
+      "outputStyle": null,
+      "promptSuggestions": false,
+      "discoveredOutputStyles": [],
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "loadUserSettings": true,
+      "enableChrome": false,
+      "visibleModels": [],
+      "modelAliases": {},
+      "environmentVariables": "",
+      "environmentHash": "",
+      "sessionEnvironmentHash": "",
+      "selectedModels": []
+    },
+    "codex": {
+      "enabled": false,
+      "safeMode": "workspace-write",
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "modelAliases": {},
+      "visibleModels": [],
+      "enableUltraEffort": false,
+      "responseStyle": "pragmatic",
+      "responseVerbosity": "default",
+      "reasoningSummary": "detailed",
+      "environmentVariables": "",
+      "environmentHash": "",
+      "sessionEnvironmentHash": "",
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "selectedModels": []
+    },
+    "deepseek": {
+      "enabled": true,
+      "codeMode": false,
+      "presetPlugins": "",
+      "cliPath": "",
+      "cliPathsByHost": {
+        "device-489a69cf1e2175d484214cdfa8c5fd874da23848e853fda35349428e7316b135": "D:\\Programs\\DeepSeek Harness"
+      },
+      "environmentVariables": "",
+      "environmentHash": "runtime-input:v1:d639817b3ba03b4fa54c1d7bda64639dfa9b793246e936b30dfac4203ed8d441",
+      "visibleModels": [
+        "deepseek:deepseek-official/deepseek-flash",
+        "deepseek:deepseek-official/deepseek-v4-pro"
+      ],
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "selectedModels": [
+        {
+          "encodedId": "deepseek:deepseek-official/deepseek-flash",
+          "provider": "deepseek-official",
+          "id": "deepseek-flash",
+          "label": "DeepSeek-V4.1-Flash",
+          "reasoning": [
+            {
+              "id": "off",
+              "name": "Off"
+            },
+            {
+              "id": "low",
+              "name": "Low"
+            },
+            {
+              "id": "high",
+              "name": "High"
+            },
+            {
+              "id": "max",
+              "name": "Max"
+            }
+          ],
+          "available": true
+        },
+        {
+          "encodedId": "deepseek:deepseek-official/deepseek-v4-pro",
+          "provider": "deepseek-official",
+          "id": "deepseek-v4-pro",
+          "label": "DeepSeek-V4-Pro",
+          "reasoning": [
+            {
+              "id": "off",
+              "name": "Off"
+            },
+            {
+              "id": "low",
+              "name": "Low"
+            },
+            {
+              "id": "high",
+              "name": "High"
+            },
+            {
+              "id": "max",
+              "name": "Max"
+            }
+          ],
+          "description": "Stronger agentic coding, knowledge, and difficult reasoning; suited to complex or quality-critical tasks at higher cost.",
+          "available": true
+        }
+      ]
+    },
+    "grok": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "visibleModels": [],
+      "selectedModelsByHost": {}
+    },
+    "opencode": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredThinkingByModel": {},
+      "thinkingOptionsByModel": {},
+      "visibleModels": [],
+      "selectedModels": []
+    },
+    "pi": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredThinkingByModel": {},
+      "sessionEnvironmentHash": "",
+      "visibleModels": [],
+      "selectedModels": []
+    }
+  },
+  "settingsProvider": "claude",
+  "lastSelectedChatModel": null,
+  "inlineEditModel": null,
+  "savedProviderModel": {},
+  "savedProviderEffort": {},
+  "savedProviderServiceTier": {},
+  "savedProviderPermissionMode": {
+    "claude": "auto",
+    "deepseek": "yolo"
+  },
+  "pendingProviderSessionInvalidations": {},
+  "enableAutoScroll": true,
+  "showMessageTimestamps": false,
+  "deferMathRenderingDuringStreaming": true,
+  "pluginRenderedFenceLanguages": [],
+  "expandFileEditsByDefault": false,
+  "chatViewPlacement": "right-sidebar",
+  "enableZenMode": true,
+  "zenModePosition": null,
+  "enableDualPane": true,
+  "dualPaneSide": "right",
+  "restoreTabsOnStartup": true,
+  "skillsSynced": false,
+  "sessionManagerOrganization": "list",
+  "sessionManagerSort": "last-updated",
+  "sessionAutoArchiveAfter": "off",
+  "pinnedLinkedContentPaths": [],
+  "hiddenCommands": []
+}

@@ -1,1 +1,581 @@
 // place your custom styles here
+
+/* =============================================================
+ * lcc 的运维笔记 · 外观增强
+ * 只调整配色、圆角、阴影、间距等视觉细节，不改动布局结构
+ * ============================================================= */
+
+:root {
+  --lcc-radius-sm: 8px;
+  --lcc-radius: 12px;
+  --lcc-radius-lg: 18px;
+  --lcc-gradient: linear-gradient(135deg, #2563eb 0%, #22d3ee 100%);
+  --lcc-gradient-soft: linear-gradient(
+    135deg,
+    rgb(37 99 235 / 14%) 0%,
+    rgb(34 211 238 / 14%) 100%
+  );
+  --lcc-shadow: 0 1px 2px rgb(15 23 42 / 6%), 0 10px 26px -18px rgb(15 23 42 / 30%);
+  --lcc-shadow-hover: 0 2px 6px rgb(15 23 42 / 8%),
+    0 18px 36px -18px rgb(37 99 235 / 40%);
+
+  // 代码块圆角统一走主题变量，行号栏、复制按钮等内部元素会一起跟随
+  --code-border-radius: var(--lcc-radius);
+}
+
+html {
+  scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
+::selection {
+  background: var(--vp-c-accent-soft);
+}
+
+// 细滚动条
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: var(--vp-c-border);
+  background-clip: content-box;
+
+  &:hover {
+    background: var(--vp-c-accent);
+    background-clip: content-box;
+  }
+}
+
+/* -------------------------------------------------------------
+ * 导航栏
+ * ----------------------------------------------------------- */
+
+.vp-navbar {
+  border-bottom: 1px solid var(--vp-c-gutter);
+  box-shadow: none;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+
+  .vp-nav-logo {
+    transition: transform 0.4s ease;
+  }
+
+  .vp-brand:hover .vp-nav-logo {
+    transform: rotate(-8deg) scale(1.06);
+  }
+
+  .vp-site-name {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: var(--lcc-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .vp-nav-item > .auto-link {
+    padding-inline: 0.55rem;
+    border-radius: var(--lcc-radius-sm);
+    transition: background 0.25s ease, color 0.25s ease;
+
+    &:hover {
+      background: var(--vp-c-control);
+    }
+  }
+
+  .vp-nav-item > .auto-link.route-link-active {
+    background: var(--vp-c-accent-soft);
+  }
+}
+
+/* -------------------------------------------------------------
+ * 侧边栏
+ * ----------------------------------------------------------- */
+
+.vp-sidebar {
+  border-inline-end: 1px solid var(--vp-c-gutter);
+
+  .vp-sidebar-link {
+    border-radius: var(--lcc-radius-sm);
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+
+  .vp-sidebar-link.active {
+    background: var(--vp-c-accent-soft);
+    color: var(--vp-c-accent);
+    font-weight: 600;
+  }
+
+  .vp-sidebar-title {
+    letter-spacing: 0.02em;
+  }
+}
+
+.vp-page .vp-blogger-info,
+.vp-sidebar .vp-blogger-info {
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: var(--lcc-radius);
+}
+
+.vp-blogger-info {
+  .vp-blogger-avatar {
+    box-shadow: 0 0 0 3px var(--vp-c-bg-elv), 0 0 0 5px var(--vp-c-accent-soft);
+    transition: box-shadow 0.35s ease, transform 0.35s ease;
+  }
+
+  &:hover .vp-blogger-avatar {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 3px var(--vp-c-bg-elv), 0 0 0 6px var(--vp-c-accent);
+  }
+
+  .vp-blogger-name {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .vp-blogger-description {
+    color: var(--vp-c-text-mute);
+  }
+}
+
+/* -------------------------------------------------------------
+ * 首页 hero
+ * ----------------------------------------------------------- */
+
+.vp-blog-hero {
+  .vp-blog-mask:after {
+    background:
+      radial-gradient(
+        120% 120% at 20% 10%,
+        rgb(37 99 235 / 45%) 0%,
+        transparent 55%
+      ),
+      linear-gradient(
+        170deg,
+        rgb(8 15 32 / 55%) 0%,
+        rgb(10 20 45 / 70%) 55%,
+        rgb(5 8 18 / 88%) 100%
+      );
+  }
+
+  .vp-blog-hero-title {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-shadow: 0 4px 30px rgb(0 0 0 / 45%);
+  }
+
+  .vp-blog-hero-description {
+    letter-spacing: 0.08em;
+    opacity: 0.92;
+    text-shadow: 0 2px 16px rgb(0 0 0 / 40%);
+  }
+
+  .slide-down-button .icon {
+    color: rgb(255 255 255 / 70%);
+  }
+}
+
+/* 首页文章 / 分类 / 标签 / 时间轴 统计 */
+.vp-blog-counts {
+  gap: 0.5rem;
+}
+
+.vp-blog-count {
+  border-radius: var(--lcc-radius-sm);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+  .count {
+    font-weight: 700;
+    color: var(--vp-c-accent);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* 首页项目卡片 */
+.vp-project-panel {
+  gap: 0.25rem;
+}
+
+.vp-project-panel .vp-project-card {
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: var(--lcc-radius);
+  box-shadow: var(--lcc-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--lcc-shadow-hover);
+  }
+
+  .vp-project-name {
+    font-weight: 600;
+  }
+
+  .vp-project-desc {
+    color: var(--vp-c-text-mute);
+    font-size: 13px;
+  }
+
+  .icon {
+    color: var(--vp-c-accent);
+    opacity: 0.85;
+  }
+}
+
+/* -------------------------------------------------------------
+ * 文章列表
+ * ----------------------------------------------------------- */
+
+.vp-article-item {
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: var(--lcc-radius);
+  box-shadow: var(--lcc-shadow);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--vp-c-accent-soft);
+    box-shadow: var(--lcc-shadow-hover);
+  }
+
+  .vp-article-title {
+    font-weight: 600;
+
+    &:after {
+      height: 3px;
+      border-radius: 2px;
+    }
+  }
+
+  .vp-article-excerpt {
+    color: var(--vp-c-text-mute);
+  }
+
+  .vp-article-cover {
+    border-radius: var(--lcc-radius-sm);
+  }
+
+  .page-info {
+    color: var(--vp-c-text-mute);
+    font-size: 13px;
+  }
+}
+
+.vp-article-cover img {
+  transition: transform 0.45s ease;
+}
+
+.vp-article-item:hover .vp-article-cover img {
+  transform: scale(1.03);
+}
+
+/* 分页 */
+.vp-pagination-button {
+  padding-inline: 1.1em;
+  border-radius: 999px;
+  transition: background 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+
+  &:hover:not(:disabled) {
+    border-color: transparent;
+    background: var(--vp-c-accent);
+    color: #fff;
+  }
+}
+
+.vp-pagination-number {
+  height: 32px;
+  border-radius: 999px;
+}
+
+/* -------------------------------------------------------------
+ * 文章页：标题、目录、正文
+ * ----------------------------------------------------------- */
+
+.vp-page-title {
+  h1 {
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+
+  h1:after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin-top: 0.6rem;
+    border-radius: 999px;
+    background: var(--lcc-gradient);
+  }
+
+  hr {
+    margin-top: 1rem;
+    border: 0;
+    border-top: 1px solid var(--vp-c-gutter);
+  }
+}
+
+.vp-toc-wrapper {
+  .vp-toc-link {
+    border-radius: 6px;
+    transition: color 0.25s ease, background 0.25s ease;
+
+    &:hover {
+      color: var(--vp-c-accent);
+    }
+  }
+
+  .vp-toc-item.active .vp-toc-link {
+    color: var(--vp-c-accent);
+    font-weight: 600;
+  }
+}
+
+/* -------------------------------------------------------------
+ * Markdown 正文排版
+ * ----------------------------------------------------------- */
+
+[vp-content] {
+  line-height: 1.78;
+  font-size: 16px;
+
+  h2,
+  h3,
+  h4 {
+    position: relative;
+    font-family: var(--vp-font-heading);
+    letter-spacing: 0.01em;
+    scroll-margin-top: calc(var(--navbar-height) + 1rem);
+  }
+
+  // 标题左侧强调条：用伪元素挂在标题文字旁，
+  // 避免 border 跟着标题的 padding-top（锚点偏移）一起被拉长
+  h2:before,
+  h3:before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    bottom: 0.22em;
+    width: 4px;
+    height: 1.05em;
+    border-radius: 999px;
+    background: var(--vp-c-accent);
+  }
+
+  h2 {
+    padding-inline-start: 0.8rem;
+  }
+
+  h3 {
+    padding-inline-start: 0.7rem;
+  }
+
+  h3:before {
+    width: 3px;
+    height: 0.95em;
+    background: var(--vp-c-accent);
+    opacity: 0.55;
+  }
+
+  // 正文链接（排除标题里的锚点，否则标题会被染成链接色并加下划线）
+  a:not(.header-anchor) {
+    color: var(--vp-c-accent);
+    text-decoration: none;
+    border-bottom: 1px dashed rgb(37 99 235 / 35%);
+    transition: border-color 0.25s ease, color 0.25s ease;
+
+    &:hover {
+      border-bottom-color: var(--vp-c-accent);
+    }
+  }
+
+  blockquote {
+    margin-block: 1.4rem;
+    padding: 0.9em 1.2em;
+    border: 0;
+    border-inline-start: 3px solid var(--vp-c-accent);
+    border-radius: 0 var(--lcc-radius-sm) var(--lcc-radius-sm) 0;
+    background: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-mute);
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // 行内代码（必须排除代码块里的 code，否则会撑坏代码块高度与行号对齐）
+  :not(pre) > code {
+    padding: 0.15em 0.42em;
+    border-radius: 6px;
+    background: var(--vp-c-control);
+    color: var(--vp-c-accent);
+    font-size: 0.88em;
+  }
+
+  // 代码块：只加外框，不动内部 padding / font-size（行号与复制按钮依赖它们）
+  div[class*="language-"] {
+    border: 1px solid var(--vp-c-gutter);
+    border-radius: var(--code-border-radius);
+    box-shadow: 0 1px 2px rgb(15 23 42 / 5%);
+
+    pre {
+      border-radius: var(--code-border-radius);
+    }
+  }
+
+  .vp-copy-code-button {
+    border-radius: var(--lcc-radius-sm);
+    color: var(--vp-c-text-mute);
+    transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background: var(--vp-c-control);
+      color: var(--vp-c-accent);
+    }
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.94em;
+  }
+
+  thead th {
+    padding: 0.6em 0.8em;
+    background: var(--vp-c-control);
+    font-weight: 600;
+    text-align: start;
+  }
+
+  tbody td {
+    padding: 0.55em 0.8em;
+    border-top: 1px solid var(--vp-c-gutter);
+  }
+
+  tbody tr {
+    transition: background 0.25s ease;
+
+    &:hover {
+      background: var(--vp-c-bg-soft);
+    }
+  }
+
+  img {
+    border-radius: var(--lcc-radius-sm);
+    box-shadow: 0 4px 18px -10px rgb(15 23 42 / 55%);
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--vp-c-border),
+      transparent
+    );
+  }
+
+  ul > li::marker {
+    color: var(--vp-c-accent);
+  }
+
+  ol > li::marker {
+    color: var(--vp-c-accent);
+    font-weight: 600;
+  }
+
+  // 自定义容器
+  .custom-container {
+    margin-block: 1.4rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--vp-c-gutter);
+    border-radius: var(--lcc-radius);
+  }
+
+  .custom-container-title {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+}
+
+/* -------------------------------------------------------------
+ * 页脚、回到顶部
+ * ----------------------------------------------------------- */
+
+.vp-footer-wrapper {
+  position: relative;
+  border-top: 1px solid var(--vp-c-gutter);
+  background: var(--vp-c-bg-alt);
+  font-size: 14px;
+
+  a {
+    color: var(--vp-c-text-mute);
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: var(--vp-c-accent);
+    }
+  }
+}
+
+.vp-footer-wrapper:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: var(--lcc-gradient);
+  opacity: 0.55;
+}
+
+.vp-back-to-top-button {
+  border: 1px solid var(--vp-c-gutter);
+  box-shadow: 0 8px 26px -10px rgb(37 99 235 / 55%);
+  transition: box-shadow 0.3s ease;
+}
+
+/* -------------------------------------------------------------
+ * 深色模式微调
+ * ----------------------------------------------------------- */
+
+[data-theme="dark"] {
+  .vp-article-item,
+  .vp-project-panel .vp-project-card,
+  .vp-blogger-info,
+  [vp-content] div[class*="language-"] {
+    border-color: rgb(255 255 255 / 8%);
+  }
+
+  .vp-footer-wrapper {
+    background: var(--vp-c-bg-alt);
+  }
+}
+
+/* -------------------------------------------------------------
+ * 移动端
+ * ----------------------------------------------------------- */
+
+@media (max-width: 719px) {
+  .vp-page-title h1 {
+    font-size: 1.7rem;
+  }
+
+  [vp-content] h2 {
+    padding-inline-start: 0.6rem;
+  }
+}

@@ -1,3 +1,11 @@
+---
+date: 2026-06-18
+category: Python
+tag:
+  - MCP
+  - AI
+---
+
 # linux-mcp
 ##  基于mcp开发管理linux的mcp server
 

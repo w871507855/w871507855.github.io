@@ -1,3 +1,11 @@
+---
+date: 2026-10-12
+category: Linux
+tag:
+  - Ubuntu
+  - 驱动
+---
+
 # intel ac9560在ubuntu1604下安装wifi和蓝牙驱动
 
 ## 安装wifi驱动

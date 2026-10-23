@@ -1,3 +1,11 @@
+---
+date: 2026-10-12
+category: Linux
+tag:
+  - Vagrant
+  - 虚拟化
+---
+
 # vagrant常用命令
 
 - `autocomplete`：管理主机上的自动补全安装。

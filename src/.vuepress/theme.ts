@@ -13,11 +13,12 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo-lcc.svg",
+  navbarTitle: "lcc 的运维笔记",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
+  repo: "w871507855/w871507855.github.io",
   docsDir: "src",
+  docsBranch: "main",
 
   // 导航栏
   navbar,
@@ -25,17 +26,23 @@ export default hopeTheme({
   // 侧边栏
   sidebar,
 
+  // 侧边栏内条目排序：README 优先，其次按手动 order，再按时间倒序
+  sidebarSorter: ["readme", "order", "date-desc", "filename"],
+
   // 页脚
-  footer: "默认页脚",
   displayFooter: true,
 
   // 博客相关
   blog: {
-    description: "一个运维",
+    name: "lcc",
+    avatar: "/logo-lcc.svg",
+    description: "一个运维的日常笔记",
     intro: "/intro.html",
+    articlePerPage: 10,
+    articleInfo: ["Author", "Date", "Category", "Tag", "ReadingTime"],
     medias: {
       BiliBili: "https://space.bilibili.com/13379189?spm_id_from=333.1007.0.0",
-      Email: "871507855@qq.com",
+      Email: "mailto:871507855@qq.com",
       Gitee: "https://gitee.com/ahlcc",
       GitHub: "https://github.com/w871507855",
       VuePressThemeHope: {
@@ -45,27 +52,20 @@ export default hopeTheme({
     },
   },
 
+  // 文章页面信息
+  pageInfo: ["Author", "Date", "Category", "Tag", "ReadingTime", "Word"],
+
+  // 外观
+  darkmode: "switch",
+  themeColor: false,
+  fullscreen: true,
+  print: true,
+  pure: false,
+
   locales: {
     "/": {
       footer:
-        "主题使用 <a target='blank' href='https://theme-hope.vuejs.press/zh/'>vuepress-theme-hope</a>",
-
-      navbar: navbar,
-      sidebar: sidebar,
-    },
-
-    // "/en/": {
-    //   navbar: enNavbar,
-    //   sidebar: enSidebar,
-    //   footer:
-    //     "Theme by <a target='blank' href='https://theme-hope.vuejs.press/'>vuepress-theme-hope</a>",
-    // },
-  },
-
-  // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["lcc123456"],
+        '<span>lcc 的运维笔记</span> · <a href="/intro.html">关于我</a> · <a href="/category/">分类</a> · <a href="/timeline/">时间轴</a>',
     },
   },
 
@@ -80,6 +80,26 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+
+    // 代码块一键复制
+    copyCode: {
+      showInMobile: true,
+    },
+
+    // 回到顶部
+    backToTop: true,
+
+    // 图片预览
+    photoSwipe: true,
+
+    // 阅读时间
+    readingTime: true,
+
+    // 从 git 提交记录读取最后更新时间
+    git: true,
+
+    // 站点地图
+    sitemap: true,
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
@@ -136,33 +156,6 @@ export default hopeTheme({
       sup: true,
       tasklist: true,
       vPre: true,
-
-      // 在启用之前安装 chart.js
-      // chart: true,
-
-      // insert component easily
-
-      // 在启用之前安装 echarts
-      // echarts: true,
-
-      // 在启用之前安装 flowchart.ts
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // 在启用之前安装 mermaid
-      // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // 在启用之前安装 @vue/repl
-      // vuePlayground: true,
-
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
     },
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
