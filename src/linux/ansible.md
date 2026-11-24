@@ -12,6 +12,8 @@ tag:
 
 ### 1. Ansible 概述与核心概念
 - 1.1 什么是 Ansible，为什么选择它（无代理、幂等性、YAML 易读性）
+	- 使用开源自动化方案，自动化执行任务的工具
+	- 
 - 1.2 Ansible 架构：控制节点与受管节点
 - 1.3 核心组件：Inventory、Module、Playbook、Plugin
 - 1.4 Ansible 与其他工具对比（SaltStack/Puppet/Chef）

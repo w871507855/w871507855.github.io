@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/linux/ai工具.md",
+                "file": "src/nas/飞牛.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ai工具"
+              "title": "飞牛"
             }
           }
         ]
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/linux/ai工具.md",
+                "file": "src/nas/飞牛.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -179,8 +179,8 @@
                   "activeTabId": "tab-1792725513959-ace2o4p"
                 }
               },
-              "icon": "bot",
-              "title": "Claudian"
+              "icon": "lucide-ghost",
+              "title": "claudian-view"
             }
           }
         ],
@@ -201,12 +201,14 @@
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "remotely-save:Remotely Save": false,
-      "realclaudian:Open Claudian": false
+      "remotely-save:Remotely Save": false
     }
   },
   "active": "15d96e6ed36bbb9a",
   "lastOpenFiles": [
+    "src/linux/ansible.md",
+    "src/linux/shell学习.md",
+    "src/linux/ai工具.md",
     "src/golang/README.md",
     "src/golang/golang开发博客项目.md",
     "src/golang/client-go学习手册.md",
@@ -230,9 +232,6 @@
     "原始资料 raw/已摄入/nginx.md",
     "原始资料 raw/已摄入/mysql.md",
     "原始资料 raw/已摄入/kubernetes.md",
-    "原始资料 raw/已摄入/jenkins.md",
-    "原始资料 raw/已摄入/intel ac9560在ubuntu1604下安装wifi和蓝牙驱动.md",
-    "原始资料 raw/已摄入/gitlab.md",
     "知识库 wiki/分析 analyses",
     "知识库 wiki/概念 concepts",
     "知识库 wiki/实体 entities",
